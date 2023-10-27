@@ -1,13 +1,122 @@
-body {
+body, html
+{
   background-color: Silver;
+  height: 100%;
+  width: 100%
 }
 
-h1 {
-  font-family; verdana;
-  font-size: 29px;
+body, #main
+{
+	margin: 0px;
+	padding: 0px;
+	background: silver;
 }
 
-h3 {
-  font-family: verdana;
-  font-size: 20px;
+#main
+{
+	width: 900px;
+	margin: auto;
 }
+
+#navigation
+{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#header
+{
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
+	background: grey;
+}
+
+#links
+{
+	float: right;
+	background-color: #eeeeee;
+	padding: 5px;
+	margin-right: 2px;
+	font-size: 0.8em;
+	color: blue;
+}
+
+#content
+{
+	background: white;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+#footer
+{
+	border: 1px solid black;
+	padding: 5px;
+	font-weight: bolder;
+}
+
+@media only screen and (max-width: 900px) {
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#main
+	{
+		background: pink;
+		width: 100%;
+	}
+	
+	img
+	{
+		width: 90%;
+	}
+	
+	h1
+	{
+		font-size: 3em;
+		text-align: center;
+	}
+	
+	h3
+	{
+		font-size: 1.5em;
+	}
+	
+	#header
+	{
+		height: 10%;
+		background: gold;
+	}
+	
+	#navigation
+	{
+		background: grey;
+		height: 100%;
+	}
+	
+	#links
+	{
+		width: 100%;
+		display: block;  
+		text-align: right;
+		background: #d68910;
+		color: black;
+		margin-top: 3px;
+		font-size: 0.9em;
+	}
+	
+	#content
+	{
+		font-size: 16pt;
+	}
+	
+	#footer
+	{
+		display: none;
+	}
+	
